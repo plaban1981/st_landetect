@@ -24,9 +24,10 @@ with st.form("Generate"):
             f.write(text1.encode("utf-8"))
         os.chmod("input.txt", 0o777)
         # Keyword Extraction API
-        url = "https://app.aimarketplace.co/api/marketplace/models/detect-language-from-the-text-01343761/predict/"
+        
+        url = "https://app.aimarketplace.co/api/marketplace/models/detect-language-from-the-text-df617b80/predict/"
         payload={'data': open('input.txt','rb')}
-        headers = {'Authorization': 'Api-Key o53j7nyd.PnBmH9MhC9MFVFklEMKuvQYr9tv3B6qb'}
+        headers = {'Authorization': 'Api-Key fJmK0Mnu.6CdR5aMw1wxTBMJ7gp0qhwMcS5NlMjuw'}
 
         response = requests.request("POST", url, headers=headers, files=payload)
         #
