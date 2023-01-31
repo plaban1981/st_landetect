@@ -14,7 +14,7 @@ st.image(image, caption='Language Detection App')
 # page header
 st.title(f"Language Detection App")
 with st.form("Generate"):
-   text1 = st.text_input("Enter text here")
+   text1 = st.text_input("Input Text supported : [English,German,French,Swedish,Russian,Arabic,Spanish,Portuguese,Italian,Dutch,Turkish,Greek,Hindi,Dutch]. Enter text here")
    submit = st.form_submit_button("Detect Language")
    #
    if submit:    
